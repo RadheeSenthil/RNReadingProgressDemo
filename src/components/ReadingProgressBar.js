@@ -14,9 +14,10 @@ const ReadingProgressBar = ({ progress }) => {
     
     useEffect(()=> {
         const targetScale = progress >= 100 ? 1 : 0;
+        const duration = progress >= 100 ? 1000 : 0;
         Animated.timing(checkmarkScale, {
             toValue: targetScale,
-            duration: 1000,
+            duration: duration,
             easing: Easing.bounce,
             useNativeDriver: true
         }
@@ -68,7 +69,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     svgView: {
-        borderColor:"purple", borderWidth:0,
         position: "absolute",
         transform: [{rotateZ: '-90deg'}],
     },

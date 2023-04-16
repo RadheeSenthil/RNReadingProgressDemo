@@ -46,8 +46,8 @@ const ArticleScreen = () => {
 
             <View style={styles.headerContainer}>
                 <View style={styles.leftHeaderView}>
-                    <Text style={styles.articleText}>
-                        Article1
+                    <Text style={styles.articleTitleText}>
+                        Mother Nature
                     </Text>
                 </View>
                 <View style={styles.rightHeaderView}>
@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
         marginBottom: 16,
         borderWidth: 0.5, borderColor: "gray",
     },
-    articleText: {
-        marginTop: 20,
+    articleTitleText: {
+        marginTop: 15,
         fontSize: 26,
         fontWeight: 'bold',
     },

@@ -21,4 +21,8 @@ https://icons.expo.fyi/
 
 npm install @expo/vector-icons
 
-npm install react-native-svg
+npx expo install react-native-svg@13.4.0
+
+## Images
+https://unsplash.com/t/nature
+
